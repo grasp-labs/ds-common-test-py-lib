@@ -1,9 +1,12 @@
 {
+  "prerelease": true,
+  "prerelease-type": "alpha",
   "packages": {
     ".": {
       "release-type": "python",
       "package-name": "ds-common-test-py-lib",
       "include-v-in-tag": true,
+      "include-component-in-tag": false,
       "version-file": "pyproject.toml"
     }
   }
