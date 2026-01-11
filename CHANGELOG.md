@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.0](https://github.com/grasp-labs/ds-common-test-py-lib/compare/ds-common-test-py-lib-v0.1.0...ds-common-test-py-lib-v0.2.0) (2026-01-11)
+## [0.1.0a1](https://github.com/grasp-labs/ds-common-test-py-lib/compare/ds-common-test-py-lib-v0.1.0...ds-common-test-py-lib-v0.1.0a1) (2026-01-11)
 
 
 ### Features
