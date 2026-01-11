@@ -15,11 +15,8 @@ Example
     print(f"Package version: {__version__}")
 """
 
-from importlib.metadata import PackageNotFoundError, version
+from importlib.metadata import version
 
-try:
-    __version__ = version("ds-common-test-py-lib")
-except PackageNotFoundError:
-    __version__ = "0.0.0"
+__version__ = version("ds-common-test-py-lib")
 
 __all__ = ["__version__"]
