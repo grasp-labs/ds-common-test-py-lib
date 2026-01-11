@@ -16,4 +16,4 @@
 * gh-access for release-please ([71193fa](https://github.com/grasp-labs/ds-common-test-py-lib/commit/71193faf10559760e26e8fd5cbbbe22c04ad5e60))
 * gh-access for release-please ([2bdf34c](https://github.com/grasp-labs/ds-common-test-py-lib/commit/2bdf34cc1dbc5075710e81ef61fead0688b37562))
 * remove fallback on __init__.py version ([5e9cdd1](https://github.com/grasp-labs/ds-common-test-py-lib/commit/5e9cdd14c4eb582c930e75993d037a622cc6c10a))
-* unable checks on CHANGELOG.md ([2696b52](https://github.com/grasp-labs/ds-common-test-py-lib/commit/2696b5231daebe298c347b9b05dffd3408dc083c))
+* disable checks on CHANGELOG.md ([2696b52](https://github.com/grasp-labs/ds-common-test-py-lib/commit/2696b5231daebe298c347b9b05dffd3408dc083c))
