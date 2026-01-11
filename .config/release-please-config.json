@@ -1,7 +1,7 @@
 {
   "prerelease": true,
   "prerelease-type": "alpha",
-  "versioning": "semver",
+  "versioning": "prerelease",
   "packages": {
     ".": {
       "release-type": "python",
