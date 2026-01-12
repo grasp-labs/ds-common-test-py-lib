@@ -64,7 +64,6 @@ make tag           # Create git tag and push (triggers release)
 > push it to the remote repository, which may trigger automated
 > releases. Ensure you have updated `pyproject.toml` with the new version
 > and committed all changes before running this command.
-> changes before running this command.
 
 ### Pre-commit Hooks
 
