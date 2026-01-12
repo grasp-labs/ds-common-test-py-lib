@@ -55,9 +55,16 @@ make publish       # Upload to PyPI
 ```shell
 # Show current version
 make version
+
+# Tag and release
+make tag           # Create git tag and push (triggers release)
 ```
 
-Releases are automated via `release-please` when changes are merged to `main`.
+> **⚠️ Warning**: The `make tag` command will create a git tag and
+> push it to the remote repository, which may trigger automated
+> releases. Ensure you have updated `pyproject.toml` with the new version
+> and committed all changes before running this command.
+> changes before running this command.
 
 ### Pre-commit Hooks
 
