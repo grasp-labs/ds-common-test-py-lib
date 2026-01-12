@@ -26,15 +26,9 @@ jobs:
         run: |
           # Tag name is available as github.ref_name, e.g. v1.2.3
           TAG_VERSION="${GITHUB_REF_NAME#v}"
-          FILE_VERSION=$(
-            python - <<'PY'
-            import pathlib
-            import tomllib
-
-            pyproject = tomllib.loads(pathlib.Path("pyproject.toml").read_text(encoding="utf-8"))
-            print(pyproject["project"]["version"])
-            PY
-          )
+          FILE_VERSION="$(
+            python -c "import pathlib, tomllib; pyproject = tomllib.loads(pathlib.Path('pyproject.toml').read_text(encoding='utf-8')); print(pyproject['project']['version'])"
+          )"
           echo "Tag version: $TAG_VERSION"
           echo "File version: $FILE_VERSION"
           if [ "$TAG_VERSION" != "$FILE_VERSION" ]; then
