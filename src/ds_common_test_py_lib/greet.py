@@ -7,12 +7,13 @@ Region: packages/shared
 from __future__ import annotations
 
 
-def greet(name: str) -> str:
+def greet(first_name: str, last_name: str) -> str:
     """
     Build a friendly greeting.
 
     Args:
-        name: Name to greet. Must be a non-empty string after stripping.
+        first_name: First name to greet. Must be a non-empty string after stripping.
+        last_name: Last name to greet. Must be a non-empty string after stripping.
 
     Returns:
         A greeting string.
@@ -25,8 +26,11 @@ def greet(name: str) -> str:
         'Hello, World!'
     """
 
-    cleaned_name = name.strip()
-    if cleaned_name == "":
-        raise ValueError("name must be a non-empty string")
+    cleaned_first_name = first_name.strip()
+    cleaned_last_name = last_name.strip()
+    if cleaned_first_name == "":
+        raise ValueError("first_name must be a non-empty string")
+    if cleaned_last_name == "":
+        raise ValueError("last_name must be a non-empty string")
 
-    return f"Hello, {cleaned_name}!"
+    return f"Hello, {cleaned_first_name} {cleaned_last_name}!"

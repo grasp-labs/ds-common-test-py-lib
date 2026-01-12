@@ -19,7 +19,7 @@ def test_greet_returns_expected_string() -> None:
         None.
     """
 
-    assert greet("World") == "Hello, World!"
+    assert greet("John", "Doe") == "Hello, John Doe!"
 
 
 def test_greet_strips_whitespace() -> None:
@@ -30,7 +30,7 @@ def test_greet_strips_whitespace() -> None:
         None.
     """
 
-    assert greet("  Alice  ") == "Hello, Alice!"
+    assert greet("  Alice  ", "  Doe  ") == "Hello, Alice Doe!"
 
 
 def test_greet_raises_for_empty_name() -> None:
@@ -41,8 +41,8 @@ def test_greet_raises_for_empty_name() -> None:
         None.
     """
 
-    with pytest.raises(ValueError, match="name must be a non-empty string"):
-        greet("")
+    with pytest.raises(ValueError, match="first_name must be a non-empty string"):
+        greet("", "Doe")
 
-    with pytest.raises(ValueError, match="name must be a non-empty string"):
-        greet("   ")
+    with pytest.raises(ValueError, match="last_name must be a non-empty string"):
+        greet("John", "   ")
